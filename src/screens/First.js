@@ -7,12 +7,14 @@ export default function First({ page, setPage, formData, setFormData }) {
 
     return (
         <>
-            {/* <form 
-            className='center'
+            <form 
+            
             >
+                <div  className='start'>  Account_Transaction_ID:</div>
+              
                 <div 
                   className='centerr'
-                >Account_Transaction_ID:
+                >
                     <FormInput
                        
                         placeholderText={'Account_Transaction_ID'}
@@ -20,8 +22,9 @@ export default function First({ page, setPage, formData, setFormData }) {
                         onChange={(e) => setFormData({ ...formData, AccountTransactionID: e.target.value })}
                     />
                 </div>
-
-                <div  className='centerr'>Transaction_ID:
+                <div   className='start'>   Transaction_ID:</div>
+              
+                <div  className='centerr'>
                     <FormInput
                     
                         placeholderText={'Transaction_ID'}
@@ -29,8 +32,9 @@ export default function First({ page, setPage, formData, setFormData }) {
                         onChange={(e) => setFormData({ ...formData, TransactionID: e.target.value })}
                     />
                 </div>
-
-                <div className='centerr'>Transaction_Amount:
+              
+                <div   className='start'>   Transaction_Amount:</div>
+                <div className='centerr'>
                     <FormInput
                     
                         placeholderText={'Transaction_Amount'}
@@ -38,8 +42,10 @@ export default function First({ page, setPage, formData, setFormData }) {
                         onChange={(e) => setFormData({ ...formData, TransactionAmount: e.target.value })}
                     />
                 </div>
-
-                <div  className='centerr'>Linked_Account_ID:
+                
+                <div   className='start'>   Transaction_Amount:</div>
+                
+                <div  className='centerr'>
                     <FormInput
                     
                         placeholderText={'Linked_Account_ID'}
@@ -47,19 +53,19 @@ export default function First({ page, setPage, formData, setFormData }) {
                         onChange={(e) => setFormData({ ...formData, LinkedAccountID: e.target.value })}
                     />
                 </div>
-
-                <FormButton
-                    style={{ marginLeft: 400 }}
-                    className='btn btn-primary nextBtn'
-                    buttonText={'Next'}
-                    onClick={() => {
-                        setFormData({ ...formData, AccountTransactionID: Number(formData.AccountTransactionID), TransactionAmount: Number(formData.TransactionAmount), LinkedAccountID: Number(formData.LinkedAccountID) });
-                        setPage(page + 1);
-                    }}
-                />
+                <div className='centerr'><FormButton
+                 
+                 className='btn btn-primary nextBtn'
+                 buttonText={'Next'}
+                 onClick={() => {
+                     setFormData({ ...formData, AccountTransactionID: Number(formData.AccountTransactionID), TransactionAmount: Number(formData.TransactionAmount), LinkedAccountID: Number(formData.LinkedAccountID) });
+                     setPage(page + 1);
+                 }}
+             /></div>
+                
             </form>
- */}
-  <div className="container">
+
+  {/* <div className="container">
     
           <form>
             <label for="fname">Third Name</label>
@@ -105,7 +111,7 @@ export default function First({ page, setPage, formData, setFormData }) {
           </form>
         </div>
     
-
+ */}
 
         </>
     )
