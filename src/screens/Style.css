@@ -22,8 +22,24 @@
    
     text-align: center;
     justify-content: center;
+
 }
 
 .start{
-    margin-left: 493px;
+    margin-left: 10%;
+}
+.main{
+    width: 34%;
+    height:34%;
+    background-color: blue;
+  
+   margin: auto;
+}
+.contr{
+   background-color: rgb(177, 168, 168);
+margin: auto;
+
+}
+.log{
+    max-width: 100%;
 }

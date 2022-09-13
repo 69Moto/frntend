@@ -2,15 +2,20 @@ import React from 'react';
 import FormButton from '../components/FormButton';
 import FormInput from '../components/FormInput';
 import './Style.css';
+import Img1 from "../components/Images/Img1.jpeg"
 
 export default function First({ page, setPage, formData, setFormData }) {
 
     return (
         <>
+    
+            <div className='main'> 
+    <div className='contr'>    <div>
             <form 
             
             >
-                <div  className='start'>  Account_Transaction_ID:</div>
+                <div className='centerr'><img className='log' src={Img1}/></div>
+                <div  className='start' style={{paddingTop:"10px"}}>  Account_Transaction_ID:</div>
               
                 <div 
                   className='centerr'
@@ -62,56 +67,13 @@ export default function First({ page, setPage, formData, setFormData }) {
                      setPage(page + 1);
                  }}
              /></div>
+             
                 
             </form>
-
-  {/* <div className="container">
-    
-          <form>
-            <label for="fname">Third Name</label>
-            <input className="inp" name="firstname" placeholder="Your name.." />
-            <div>
-              <label for="lname"></label>
-            </div>
-            <label for="lname">Email</label>
-            <input
-              className="inp"
-              id="lname"
-              name="lastname"
-              placeholder="Your email.."
-            />
-            <div>
-              <label for="lname"></label>
-            </div>
-            <label for="lname">PassWord</label>
-            <input
-              className="inp"
-              id="lname"
-              name="lastname"
-              placeholder="Enter your password.."
-            />
-            <div>
-              <label for="lname"></label>
-            </div>
-            <label for="lname">MobileNo</label>
-            <input
-              className="inp"
-              id="lname"
-              name="lastname"
-              placeholder="Enter your mobile no..."
-            />
-            <div>
-              <label for="lname"></label>
-            </div>
-            <div style={{ margin: "auto", width: "100px" }}>
-              <button >
-                Send
-              </button>
-            </div>
-          </form>
-        </div>
-    
- */}
+            </div></div></div>
+ 
+   
+ 
 
         </>
     )
