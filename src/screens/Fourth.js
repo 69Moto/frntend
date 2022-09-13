@@ -6,41 +6,41 @@ import './Style.css';
 export default function Fourth({ page, setPage, formData, setFormData }) {
   return (
     <>
-      <form style={{ marginRight: 270, marginLeft: 270, }}>
-
-        <div style={{ margin: 17 }}>Currency_Code_ID:
+      <form>
+      <div  className='start'>  Currency_Code_ID:</div>
+        <div  className='centerr'>
           <FormInput
             placeholderText={'Currency_Code_ID'}
             value={formData.CurrencyCodeID}
             onChange={(e) => setFormData({ ...formData, CurrencyCodeID: e.target.value })}
           />
         </div>
-
-        <div style={{ margin: 17 }}>Account_Number:
+        <div  className='start'> Account_Number:</div>
+        <div  className='centerr'>
           <FormInput
             placeholderText={'Account_Number'}
             value={formData.AccountNumber}
             onChange={(e) => setFormData({ ...formData, AccountNumber: e.target.value })}
           />
         </div>
-
-        <div style={{ margin: 17 }}>Bank_ID:
+        <div  className='start'>  Bank_ID:</div>
+        <div  className='centerr'>
           <FormInput
             placeholderText={'Bank_ID'}
             value={formData.BankID}
             onChange={(e) => setFormData({ ...formData, BankID: e.target.value })}
           />
         </div>
-
-        <div style={{ margin: 17 }}>Narration:
+        <div  className='start'>  Narration:</div>
+        <div  className='centerr'>
           <FormInput
             placeholderText={'Narration'}
             value={formData.Narration}
             onChange={(e) => setFormData({ ...formData, Narration: e.target.value })}
           />
         </div>
-
-        <div style={{ margin: 17 }}>Transaction_Reference_Number:
+        <div  className='start'>  Transaction_Reference_Number:</div>
+        <div  className='centerr' >
           <FormInput
             placeholderText={'Transaction_Reference_Number'}
             value={formData.TransactionReferenceNumber}
@@ -48,25 +48,27 @@ export default function Fourth({ page, setPage, formData, setFormData }) {
           />
         </div>
 
-        <FormButton
-          style={{ marginLeft: 70 }}
+       <div  className='centerr'> 
+        <div> <FormButton
+      
           className='btn btn-primary'
-          buttonText={'Previous'}
+          buttonText={'Prev'}
           onClick={() => {
             return setPage(page - 1);
 
           }}
-        />
-
-        <FormButton
-          style={{ marginLeft: 400 }}
-          className='btn btn-primary'
-          buttonText={'Next'}
-          onClick={() => {
-            setFormData({ ...formData, CurrencyCodeID: Number(formData.CurrencyCodeID), AccountNumber: Number(formData.AccountNumber), BankID: Number(formData.BankID)});
-            setPage(page + 1);
-          }}
-        />
+        /></div>
+       
+ <div><FormButton
+         
+         className='btn btn-primary'
+         buttonText={'Next'}
+         onClick={() => {
+           setFormData({ ...formData, CurrencyCodeID: Number(formData.CurrencyCodeID), AccountNumber: Number(formData.AccountNumber), BankID: Number(formData.BankID)});
+           setPage(page + 1);
+         }}
+       /></div>
+        </div>
       </form>
 
 
