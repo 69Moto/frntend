@@ -7,7 +7,7 @@ import './Style.css';
 export default function Second({ page, setPage, formData, setFormData }) {
   return (
     <>
-      <form style={{ marginRight: 270, marginLeft: 270, }}>
+      {/* <form style={{ marginRight: 270, marginLeft: 270, }}>
 
         <div style={{ margin: 17 }}>MCC_Code_ID:
           <FormInput
@@ -127,7 +127,7 @@ export default function Second({ page, setPage, formData, setFormData }) {
           }}
         />
 
-      </form>
+      </form> */}
 
 
     </>
