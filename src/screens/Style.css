@@ -11,4 +11,15 @@
     border-radius: 0 20px 20px 0; 
     display: inline-block;
 }
-
+.center{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.centerr{
+    display: flex;
+   
+    text-align: center;
+    justify-content: center;
+}

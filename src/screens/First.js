@@ -7,19 +7,21 @@ export default function First({ page, setPage, formData, setFormData }) {
 
     return (
         <>
-            <form 
-            style={{ marginRight: 270, marginLeft: 270}}
+            {/* <form 
+            className='center'
             >
-                <div  style={{ margin: 17 }}>Account_Transaction_ID:
+                <div 
+                  className='centerr'
+                >Account_Transaction_ID:
                     <FormInput
-                        
+                       
                         placeholderText={'Account_Transaction_ID'}
                         value={formData.AccountTransactionID}
                         onChange={(e) => setFormData({ ...formData, AccountTransactionID: e.target.value })}
                     />
                 </div>
 
-                <div  style={{ margin: 17 }}>Transaction_ID:
+                <div  className='centerr'>Transaction_ID:
                     <FormInput
                     
                         placeholderText={'Transaction_ID'}
@@ -28,7 +30,7 @@ export default function First({ page, setPage, formData, setFormData }) {
                     />
                 </div>
 
-                <div  style={{ margin: 17 }}>Transaction_Amount:
+                <div className='centerr'>Transaction_Amount:
                     <FormInput
                     
                         placeholderText={'Transaction_Amount'}
@@ -37,7 +39,7 @@ export default function First({ page, setPage, formData, setFormData }) {
                     />
                 </div>
 
-                <div  style={{ margin: 17 }}>Linked_Account_ID:
+                <div  className='centerr'>Linked_Account_ID:
                     <FormInput
                     
                         placeholderText={'Linked_Account_ID'}
@@ -56,6 +58,53 @@ export default function First({ page, setPage, formData, setFormData }) {
                     }}
                 />
             </form>
+ */}
+  <div className="container">
+    
+          <form>
+            <label for="fname">Third Name</label>
+            <input className="inp" name="firstname" placeholder="Your name.." />
+            <div>
+              <label for="lname"></label>
+            </div>
+            <label for="lname">Email</label>
+            <input
+              className="inp"
+              id="lname"
+              name="lastname"
+              placeholder="Your email.."
+            />
+            <div>
+              <label for="lname"></label>
+            </div>
+            <label for="lname">PassWord</label>
+            <input
+              className="inp"
+              id="lname"
+              name="lastname"
+              placeholder="Enter your password.."
+            />
+            <div>
+              <label for="lname"></label>
+            </div>
+            <label for="lname">MobileNo</label>
+            <input
+              className="inp"
+              id="lname"
+              name="lastname"
+              placeholder="Enter your mobile no..."
+            />
+            <div>
+              <label for="lname"></label>
+            </div>
+            <div style={{ margin: "auto", width: "100px" }}>
+              <button >
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+    
 
 
         </>
