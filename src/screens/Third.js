@@ -8,103 +8,103 @@ import Img1 from "../components/Images/Img1.jpeg"
 export default function Third({ page, setPage, formData, setFormData }) {
   return (
     <>
-    <div className='main'>
-      <div className='contr'>
-        <div><form >
-        <div className='centerr'><img className='log' src={Img1}/></div>
+      <div className='main'>
+        <div className='contr'>
+          <div><form >
+            <div className='centerr'><img className='log' src={Img1} /></div>
 
-        <div  className='start' style={{paddingTop:"10px"}}>  Merchant_ID:</div>
-<div className='centerr'>
-  <FormInput
-    placeholderText={'Merchant_ID'}
-    value={formData.MerchantID}
-    onChange={(e) => setFormData({ ...formData, MerchantID: e.target.value })}
-  />
-</div>
-<div className='start'>Transaction_Type:</div>
-<div className='start' style={{paddingTop:"10px"}}>
+            <div className='start' style={{ paddingTop: "10px" }}>  Merchant_ID:</div>
+            <div className='centerr'>
+              <FormInput
+                placeholderText={'Merchant_ID'}
+                value={formData.MerchantID}
+                onChange={(e) => setFormData({ ...formData, MerchantID: e.target.value })}
+              />
+            </div>
+            <div className='start'>Transaction_Type:</div>
+            <div className='start' style={{ paddingTop: "10px" }}>
 
-  <input
-    type='radio'
-    id='credit'
-    name='credit'
-    value='credit'
-    checked={formData.TransactionType === 'credit'}
-    onChange={(e) => setFormData({ ...formData, TransactionType: e.target.value })}
-  />
-  <label style={{ marginLeft: 7 }}
-    htmlFor='credit'
-  >
-    Credit
-  </label>
+              <input
+                type='radio'
+                id='credit'
+                name='credit'
+                value='credit'
+                checked={formData.TransactionType === 'credit'}
+                onChange={(e) => setFormData({ ...formData, TransactionType: e.target.value })}
+              />
+              <label style={{ marginLeft: 7 }}
+                htmlFor='credit'
+              >
+                Credit
+              </label>
 
-  <input
-    style={{ marginLeft: 40 }}
-    type='radio'
-    id='debit'
-    name='debit'
-    value='debit'
-    checked={formData.TransactionType === 'debit'}
-    onChange={(e) => setFormData({ ...formData, TransactionType: e.target.value })}
-  />
-  <label style={{ marginLeft: 7 }}
-    htmlFor='debit'
-  >
-    Debit
-  </label>
-</div>
-
-
-<div className='start'  style={{paddingTop:"10px"}}>Not_A_Expense:</div>
-<div className='centerr'>
-  <FormInput
-    placeholderText={'Not_A_Expense'}
-    value={formData.NotAExpense}
-    onChange={(e) => setFormData({ ...formData, NotAExpense: e.target.value })}
-  />
-</div>
-<div className='start'  style={{paddingTop:"10px"}}>Balance_Amount:</div>
-<div className='centerr'>
-  <FormInput
-    placeholderText={'Balance_Amount'}
-    value={formData.BalanceAmount}
-    onChange={(e) => setFormData({ ...formData, BalanceAmount: e.target.value })}
-  />
-</div>
-<div className='start'  style={{paddingTop:"10px"}}>Destination_Currency:</div>
-<div className='centerr'>
-  <FormInput
-    placeholderText={'Destination_Currency'}
-    value={formData.DestinationCurrency}
-    onChange={(e) => setFormData({ ...formData, DestinationCurrency: e.target.value })}
-  />
-</div>
-<div className='centerr'><div><FormButton
-  
-  className='btn btn-primary'
-  buttonText={'Previous'}
-  onClick={() => {
-    return setPage(page - 1);
-
-  }}
-/>
-
-<FormButton
-
-  className='btn btn-primary'
-  buttonText={'Next'}
-  onClick={() => {
-    setFormData({ ...formData, MerchantID: Number(formData.MerchantID), NotAExpense: Number(formData.NotAExpense), BalanceAmount: Number(formData.BalanceAmount), DestinationCurrency: Number(formData.DestinationCurrency) });
-    setPage(page + 1);
-  }}
-/>
-</div></div>
+              <input
+                style={{ marginLeft: 40 }}
+                type='radio'
+                id='debit'
+                name='debit'
+                value='debit'
+                checked={formData.TransactionType === 'debit'}
+                onChange={(e) => setFormData({ ...formData, TransactionType: e.target.value })}
+              />
+              <label style={{ marginLeft: 7 }}
+                htmlFor='debit'
+              >
+                Debit
+              </label>
+            </div>
 
 
+            <div className='start' style={{ paddingTop: "10px" }}>Not_A_Expense:</div>
+            <div className='centerr'>
+              <FormInput
+                placeholderText={'Not_A_Expense'}
+                value={formData.NotAExpense}
+                onChange={(e) => setFormData({ ...formData, NotAExpense: e.target.value })}
+              />
+            </div>
+            <div className='start' style={{ paddingTop: "10px" }}>Balance_Amount:</div>
+            <div className='centerr'>
+              <FormInput
+                placeholderText={'Balance_Amount'}
+                value={formData.BalanceAmount}
+                onChange={(e) => setFormData({ ...formData, BalanceAmount: e.target.value })}
+              />
+            </div>
+            <div className='start' style={{ paddingTop: "10px" }}>Destination_Currency:</div>
+            <div className='centerr'>
+              <FormInput
+                placeholderText={'Destination_Currency'}
+                value={formData.DestinationCurrency}
+                onChange={(e) => setFormData({ ...formData, DestinationCurrency: e.target.value })}
+              />
+            </div>
+            <div className='centerr'><div><FormButton
 
-</form></div>
+              className='btn btn-primary'
+              buttonText={'Previous'}
+              onClick={() => {
+                return setPage(page - 1);
+
+              }}
+            />
+
+              <FormButton
+
+                className='btn btn-primary'
+                buttonText={'Next'}
+                onClick={() => {
+                  setFormData({ ...formData, MerchantID: Number(formData.MerchantID), NotAExpense: Number(formData.NotAExpense), BalanceAmount: Number(formData.BalanceAmount), DestinationCurrency: Number(formData.DestinationCurrency) });
+                  setPage(page + 1);
+                }}
+              />
+            </div></div>
+
+
+
+          </form></div>
+        </div>
       </div>
-    </div>
       {/* <form style={{ marginRight: 270, marginLeft: 270, }}>
 
 
