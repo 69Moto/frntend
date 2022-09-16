@@ -10,7 +10,7 @@ export default function Fourth({ page, setPage, formData, setFormData }) {
       <div className='main'>
         <div className='contr'><div>
           <form>
-            <div className='centerr'><img className='log' src={Img1} /></div>
+            <div className='centerr'><img className='log' src={Img1} alt="description"/></div>
             <div className='start'>  Currency_Code_ID:</div>
             <div className='centerr'>
               <FormInput

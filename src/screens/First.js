@@ -14,7 +14,7 @@ export default function First({ page, setPage, formData, setFormData }) {
                     <form
 
                     >
-                        <div className='centerr'><img className='log' src={Img1} /></div>
+                        <div className='centerr'><img className='log' src={Img1} alt="description"/></div>
                         <div className='start' style={{ paddingTop: "10px" }}>  Account_Transaction_ID:</div>
 
                         <div
@@ -48,7 +48,7 @@ export default function First({ page, setPage, formData, setFormData }) {
                             />
                         </div>
 
-                        <div className='start'>   Transaction_Amount:</div>
+                        <div className='start'>   Linked_Account_ID:</div>
 
                         <div className='centerr'>
                             <FormInput
@@ -63,7 +63,7 @@ export default function First({ page, setPage, formData, setFormData }) {
                             className='btn btn-primary nextBtn'
                             buttonText={'Next'}
                             onClick={() => {
-                                setFormData({ ...formData, AccountTransactionID: Number(formData.AccountTransactionID), TransactionAmount: Number(formData.TransactionAmount), LinkedAccountID: Number(formData.LinkedAccountID) });
+                                setFormData({ ...formData, TransactionAmount: Number(formData.TransactionAmount), LinkedAccountID: Number(formData.LinkedAccountID) });
                                 setPage(page + 1);
                             }}
                         /></div>
